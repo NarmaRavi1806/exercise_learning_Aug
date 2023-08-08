@@ -1,0 +1,197 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-08T05:17:09.612Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2452665900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Stepdef.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Search Customer by EMailID",
+        "description": "  META-DATA: {\"dataProvider\":\"regressionTestData\", \"dataProviderClass\":\"stepDefinitions.Stepdef\",\"description\":\"Data driven test that uses custom data provider\"}",
+        "id": "customers;search-customer-by-emailid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12000100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User Launch Chrome browser",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_Launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2724502000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User opens URL \"http://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://admin-demo.nopcommerce.com/login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.Stepdef.user_opens_URL(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 247879900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.Stepdef.user_enters_Email_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4606108600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.Stepdef.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12318200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User can view Dashboad",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_can_view_Dashboad()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4075798800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User click on customers Menu",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_click_on_customers_Menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4219843500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "click on customers Menu Item",
+            "match": {
+              "location": "stepDefinitions.Stepdef.click_on_customers_Menu_Item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106946200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Enter customer EMail \"${cus-mail}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"${cus-mail}\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.Stepdef.enter_customer_EMail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3067737500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Click on search button",
+            "match": {
+              "location": "stepDefinitions.Stepdef.click_on_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//table[@id\u003d\u0027customers-grid\u0027]/tbody/tr[1]/td[2]\"}\n  (Session info: chrome\u003d115.0.5790.111)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027IBM-5CNJKM3\u0027, ip: \u00279.199.100.35\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\0044ES~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:54167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9eda493845ce9217e520b0f747f45061\n*** Element info: {Using\u003dxpath, value\u003d//table[@id\u003d\u0027customers-grid\u0027]/tbody/tr[1]/td[2]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy24.findElement(Unknown Source)\r\n\tat pageObjects.SearchCustomerPage.searchCustomerByEmail(SearchCustomerPage.java:87)\r\n\tat stepDefinitions.Stepdef.user_should_found_Email_in_the_Search_table(Stepdef.java:250)\r\n\tat ✽.User should found Email in the Search table(file:///C:/Users/0044ES744/eclipse-workspace/assignment/./IBM_Feature/Customers1.feature:35)\r\n",
+              "duration": 50704400,
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "User should found Email in the Search table",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_should_found_Email_in_the_Search_table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "close browser",
+            "match": {
+              "location": "stepDefinitions.Stepdef.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@assigment"
+          }
+        ]
+      }
+    ],
+    "name": "Customers",
+    "description": "",
+    "id": "customers",
+    "keyword": "Feature",
+    "uri": "file:IBM_Feature/Customers1.feature",
+    "tags": []
+  }
+]
